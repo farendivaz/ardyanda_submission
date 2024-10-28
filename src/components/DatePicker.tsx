@@ -62,9 +62,9 @@ const DatePicker: React.FC = () => {
   };
 
   return (
-    <div className=" bg-white shadow-lg border rounded-lg p-4 w-96  max-w-md mx-auto">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">Select a Date</h2>
-      <div className="flex space-x-4 mb-6">
+    <div className="max-w-md p-4 mx-auto bg-white border rounded-lg shadow-lg  w-96">
+      <h2 className="mb-4 text-2xl font-bold text-gray-800">Select a Date</h2>
+      <div className="flex mb-6 space-x-4">
         <div className="relative w-full">
           <select
             value={selectedYear}
@@ -77,9 +77,9 @@ const DatePicker: React.FC = () => {
               </option>
             ))}
           </select>
-          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+          <div className="absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 pointer-events-none">
             <svg
-              className="fill-current h-4 w-4"
+              className="w-4 h-4 fill-current"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -99,9 +99,9 @@ const DatePicker: React.FC = () => {
               </option>
             ))}
           </select>
-          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+          <div className="absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 pointer-events-none">
             <svg
-              className="fill-current h-4 w-4"
+              className="w-4 h-4 fill-current"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -121,9 +121,9 @@ const DatePicker: React.FC = () => {
               </option>
             ))}
           </select>
-          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+          <div className="absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 pointer-events-none">
             <svg
-              className="fill-current h-4 w-4"
+              className="w-4 h-4 fill-current"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -132,7 +132,7 @@ const DatePicker: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="text-3xl font-bold text-blue-600 text-center">
+      <div className="text-3xl font-bold text-center text-blue-600">
         {selectedDay} {selectedMonth} {selectedYear}
       </div>
     </div>
